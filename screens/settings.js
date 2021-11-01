@@ -5,8 +5,7 @@ export default function Settings({navigation}) {
 
 
 return(
-    
-    
+  
 <View style={{padding:40}}>
   
 <Text>

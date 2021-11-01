@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Login from './screens/Login';
 import Home from './screens/Home';
 import Review from './screens/Review';
+import Settings from './screens/settings';
 
 
 export default function App() {
@@ -18,6 +19,8 @@ export default function App() {
             <MainNavigator.Screen name = "Home" component={Home} />
             <MainNavigator.Screen name = "Login" component={Login} />
             <MainNavigator.Screen name = "Review" component={Review} />
+            <MainNavigator.Screen name = "Settings" component={Settings} />
+
             </MainNavigator.Navigator>
         </NavigationContainer>
       
