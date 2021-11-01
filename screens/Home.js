@@ -5,19 +5,17 @@ import { Ionicons, FontAwesome, AntDesign } from '@expo/vector-icons';
 
 
 
-
 export default function Home({navigation}) {
+  
   
 
   const [people, setPeople] = useState([
-    { name: 'shaun', id: '1' },
-    { name: 'yoshi', id: '2' },
-    { name: 'mario', id: '3' },
-    { name: 'luigi', id: '4' },
-    { name: 'peach', id: '5' },
-    { name: 'toad', id: '6' },
-    { name: 'bowser', id: '7' },
-    { name: 'eddy', id: '8' },
+    { name: 'Pizza', id: 1, price: 'GHC 70' },
+    { name: 'Ham Burger', id: 2, price: 'GHC 20' },
+    { name: 'Fries', id: 3, price: 'GHC 15' },
+    { name: 'Fried Chicken', id: 4, price: 'GHC10' },
+    { name: 'Grilled Meat', id: 5, price: 'GHC 12' },
+    { name: 'Chicken Burger', id: 6, price: 'GHC 20' },
   ]);
   
   return (
@@ -31,9 +29,15 @@ export default function Home({navigation}) {
       
       
     }}>
-
+      
+<TouchableOpacity> 
  <Ionicons name="ios-menu-outline" size={24} color="black" />
+ </TouchableOpacity>
+
+ <TouchableOpacity>
  <AntDesign name="search1" size={24} color="black" />
+
+ </TouchableOpacity>
  
     </ImageBackground> 
     <View style={{flex:7}}> 
@@ -52,12 +56,54 @@ export default function Home({navigation}) {
                       marginTop: 24,
                       padding: 30,
                       backgroundColor: 'pink',
-                      fontSize: 24,}}>{ item.name}
+                      fontSize: 24,
+                      borderWidth:1,
+                      width:160,
+                      }}>{ item.name}
               </Text>
           </TouchableOpacity>
           )}
      /> 
-   </View>   
+   </View>
+
+   <View style={{flex: 2,
+    justifyContent: "center",
+    backgroundColor: 'white',
+    alignItems: "center",
+     borderTopStartRadius:80,
+     backgroundColor: '  #D1D0CE ',
+     borderTopEndRadius:80 ,
+     paddingBottom: 30,
+     bottom:10,
+     padding: 40,
+      justifyContent:'space-between',
+      alignItems:'center',
+      flexDirection: "row"
+
+    }}>
+
+<TouchableOpacity>
+<AntDesign name="home" size={24} color="black" />
+
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => navigation.navigate('Settings') }>
+  <Ionicons name="settings-outline" size={24} color="black" />
+
+  </TouchableOpacity>
+
+  <TouchableOpacity>
+  <Ionicons name="ios-menu-outline" size={24} color="black" />
+
+  </TouchableOpacity>
+
+
+     
+
+
+      </View> 
+
+
  </View> 
 
 
@@ -70,5 +116,7 @@ export default function Home({navigation}) {
       </>
   );
 }
+
+
 
 
