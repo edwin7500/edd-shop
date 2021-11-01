@@ -2,6 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import React ,{useState} from 'react';
 import { Text, View ,Image, ImageBackground, StyleSheet,ScrollView,FlatList, TouchableOpacity, Button} from 'react-native';
 import { Ionicons, FontAwesome, AntDesign } from '@expo/vector-icons';
+import Card from '../routes/card';
+import { images ,foods} from '../styles/global';
 
 
 
@@ -10,19 +12,17 @@ export default function Home({navigation}) {
   
 
   const [people, setPeople] = useState([
-    { name: 'Pizza', id: 1, price: 'GHC 70' },
-    { name: 'Ham Burger', id: 2, price: 'GHC 20' },
-    { name: 'Fries', id: 3, price: 'GHC 15' },
-    { name: 'Fried Chicken', id: 4, price: 'GHC10' },
-    { name: 'Grilled Meat', id: 5, price: 'GHC 12' },
-    { name: 'Chicken Burger', id: 6, price: 'GHC 20' },
+    { name: 'Pizza', id: 1, price: 'GHC 70',rating:5 ,food: 1,},
+    { name: 'Ham Burger', id: 2, price: 'GHC 20',rating:2,food:2  },
+    { name: 'Fries', id: 3, price: 'GHC 15',rating:4,food:3   },
+    { name: 'Fried Chicken', id: 4, price: 'GHC10',rating:1,food:4   },
+    { name: 'Grilled Meat', id: 5, price: 'GHC 12' ,rating:3,food:5  },
+    { name: 'Chicken Burger', id: 6, price: 'GHC 20',rating:5 ,food:6  },
   ]);
   
   return (
-    <><ImageBackground source ={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpH32AM5BFE7iTQMtVNhxl_net_-CkRZDWZw&usqp=CAU"}}style={{
+    <><ImageBackground source ={{}} style={{
       backgroundColor: 'white',
-      flex: 1,
-      padding: 20,
       justifyContent:'space-between',
       alignItems:'center',
       flexDirection: "row"
@@ -30,18 +30,31 @@ export default function Home({navigation}) {
       
     }}>
       
-<TouchableOpacity> 
- <Ionicons name="ios-menu-outline" size={24} color="black" />
- </TouchableOpacity>
 
- <TouchableOpacity>
+
+ 
+
+    </ImageBackground> 
+
+    <ImageBackground source ={{uri:"https://www.coreldraw.com/static/cdgs/images/pages/seo/tips/photo/basics/blur-background/blur-background-og.jpg"}} style={{
+      backgroundColor: 'white',
+      flex: 7,
+      alignItems:'center',
+      flexDirection: "row"
+      
+      
+    }}>
+
+    <View style={{flex:7}} > 
+
+    
+
+  <TouchableOpacity style={{paddingBottom:20,paddingTop:20, alignItems:'center'}}>
  <AntDesign name="search1" size={24} color="black" />
 
  </TouchableOpacity>
- 
-    </ImageBackground> 
-    <View style={{flex:7}}> 
-      <Text style={{ fontSize: 24 , fontWeight: '600',marginLeft:130}}>B FOOD</Text>
+
+    
 
 
 
@@ -51,19 +64,29 @@ export default function Home({navigation}) {
     <FlatList numColumns ={2}
         data={people} renderItem={({ item }) => (
           <TouchableOpacity onPress={() => navigation.navigate('Review',item) }>
+              
+              <Card>
               <Text style={{ flex: 1,    
-                      marginHorizontal: 10,
-                      marginTop: 24,
-                      padding: 30,
-                      backgroundColor: 'pink',
-                      fontSize: 24,
-                      borderWidth:1,
-                      width:160,
-                      }}>{ item.name}
-              </Text>
+                      // marginHorizontal: 10,
+                      // marginTop: 24,
+                       padding: 30,
+                      // backgroundColor: 'pink',
+                      // fontSize: 24,
+                      // borderWidth:1,
+                       width:160,
+                      }}>
+                    { item.name}
+                    
+              </Text> 
+
+              </Card>
           </TouchableOpacity>
           )}
      /> 
+   </View>
+
+   <View style={{alignItems:"center",justifyContent:'center'}}>
+
    </View>
 
    <View style={{flex: 2,
@@ -71,10 +94,10 @@ export default function Home({navigation}) {
     backgroundColor: 'white',
     alignItems: "center",
      borderTopStartRadius:80,
-     backgroundColor: '  #D1D0CE ',
-     borderTopEndRadius:80 ,
-     paddingBottom: 30,
-     bottom:10,
+     borderTopEndRadius:80,
+    //  backgroundColor: '  #D1D0CE ',
+     paddingBottom: 250,
+     bottom:-240,
      padding: 40,
       justifyContent:'space-between',
       alignItems:'center',
@@ -106,7 +129,7 @@ export default function Home({navigation}) {
 
  </View> 
 
-
+ </ImageBackground>
 {/* <Button title='to action' onPress={() => {navigation.navigate('Review')  }}  />  */}
   
 

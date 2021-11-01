@@ -101,3 +101,58 @@ export default function Login({navigation}) {
                  )}
                />
         </View> */}
+
+
+
+
+           
+{/* <View style={{padding:40}}>
+   
+   <Image source={foods.foods[food]} style={{width:300, height:250}}/> 
+
+   <Text style={{}}>{name}</Text>  
+    <Text>{price}</Text>
+    <View style={{}}>
+      <Image source={images.ratings[rating]}/>  
+    </View>
+     
+
+
+
+    <View style={{
+     justifyContent: "center",
+     backgroundColor: 'white',
+     alignItems: "center",
+     borderTopStartRadius:80,
+     backgroundColor: ' red',
+     borderTopEndRadius:80 ,
+     paddingTop: 550,
+     bottom:10,
+     padding: 40,
+      justifyContent:'space-between',
+      alignItems:'center',
+      flexDirection: "row"
+
+    }}>
+
+<TouchableOpacity onPress={() => navigation.navigate('Home') }>
+<AntDesign name="home" size={24} color="black" />
+
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => navigation.navigate('Settings') }>
+  <Ionicons name="settings-outline" size={24} color="black" />
+
+  </TouchableOpacity>
+
+  <TouchableOpacity>
+  <Ionicons name="ios-menu-outline" size={24} color="black" />
+
+  </TouchableOpacity>
+
+
+     
+
+
+      </View> 
+</View> */}

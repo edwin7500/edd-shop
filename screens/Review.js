@@ -1,58 +1,28 @@
 import React from 'react';
-import { Text, View, TouchableOpacity } from 'react-native';
+import { Text, View, TouchableOpacity ,Image,ImageBackground} from 'react-native';
 import { Ionicons, FontAwesome, AntDesign } from '@expo/vector-icons';
-
+import Card from '../routes/card';
+import { images ,foods} from '../styles/global';
 
 export default function Review({ navigation ,route}) {
 
-const {name , price } = route.params;
+const {name , price ,rating, food} = route.params;
 
 return(
     
-    
-<View style={{padding:40}}>
-    <Text>{name}</Text>  
-    <Text>{price}</Text>  
-
-
-
-    <View style={{
-     justifyContent: "center",
-     backgroundColor: 'white',
-     alignItems: "center",
-     borderTopStartRadius:80,
-     backgroundColor: ' red',
-     borderTopEndRadius:80 ,
-     paddingTop: 550,
-     bottom:10,
-     padding: 40,
-      justifyContent:'space-between',
+ 
+<ImageBackground source ={{uri:"https://media.istockphoto.com/photos/round-podium-or-pedestal-with-blue-background-picture-id1226478932?b=1&k=20&m=1226478932&s=170667a&w=0&h=hXsvxQilNanpKx7QC_tIsFUOKPl8fdIDfJ_QSKXesGE="}} style={{
+      backgroundColor: 'white',
+      flex: 1,
       alignItems:'center',
-      flexDirection: "row"
-
+      flexDirection: "row",
+      width: 400,
+      height:700,
+      
     }}>
 
-<TouchableOpacity onPress={() => navigation.navigate('Home') }>
-<AntDesign name="home" size={24} color="black" />
+</ImageBackground>
 
-  </TouchableOpacity>
-
-  <TouchableOpacity onPress={() => navigation.navigate('Settings') }>
-  <Ionicons name="settings-outline" size={24} color="black" />
-
-  </TouchableOpacity>
-
-  <TouchableOpacity>
-  <Ionicons name="ios-menu-outline" size={24} color="black" />
-
-  </TouchableOpacity>
-
-
-     
-
-
-      </View> 
-</View>
 
 
 

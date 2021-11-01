@@ -39,7 +39,7 @@ console.log('dismissed keyboard');
          paddingBottom:50,
          fontStyle:"italic",
          marginBottom: 40,
-         }}> POWER BIKE SHOP </Text>
+         }}> JABE FOOD</Text>
         
 
          </View>

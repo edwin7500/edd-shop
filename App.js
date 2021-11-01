@@ -8,6 +8,7 @@ import Review from './screens/Review';
 import Settings from './screens/settings';
 
 
+
 export default function App() {
 
   const MainNavigator = createStackNavigator();
