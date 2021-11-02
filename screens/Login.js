@@ -39,7 +39,7 @@ console.log('dismissed keyboard');
          paddingBottom:50,
          fontStyle:"italic",
          marginBottom: 40,
-         }}> JABE FOOD</Text>
+         }}> PIZZA IN</Text>
         
 
          </View>
@@ -77,7 +77,7 @@ console.log('dismissed keyboard');
 
    <Text>PASSWORD</Text>
    
-   <TextInput style={{
+   <TextInput secureTextEntry= {true} style={{
     backgroundColor:"#e3e3e3" ,
     padding: 16,
     borderWidth: 1,

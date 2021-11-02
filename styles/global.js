@@ -28,10 +28,10 @@ export const images = {
 
 export const foods = {
   foods: {
-    '1': require('../assets/pizza.jpg'),
-    '2': require('../assets/burger.jpg'),
-    '3': require('../assets/friess.jpg'),
-    '4': require('../assets/Fried.png'),
+    '1': require('../assets/burger.jpg'),
+    '2': require('../assets/friess.jpg'),
+    '3': require('../assets/Fried.png'),
+    '4': require('../assets/pizza.jpg'),
     '5': require('../assets/meatt.jpg'),
     '6': require('../assets/cburger.jpg'),
 

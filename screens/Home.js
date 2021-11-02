@@ -12,12 +12,12 @@ export default function Home({navigation}) {
   
 
   const [people, setPeople] = useState([
-    { name: 'Pizza', id: 1, price: 'GHC 70',rating:5 ,food: 1,},
-    { name: 'Ham Burger', id: 2, price: 'GHC 20',rating:2,food:2  },
-    { name: 'Fries', id: 3, price: 'GHC 15',rating:4,food:3   },
-    { name: 'Fried Chicken', id: 4, price: 'GHC10',rating:1,food:4   },
-    { name: 'Grilled Meat', id: 5, price: 'GHC 12' ,rating:3,food:5  },
-    { name: 'Chicken Burger', id: 6, price: 'GHC 20',rating:5 ,food:6  },
+    { name: 'chicken Pizza', id: 1, price: 'GHC 70',rating:5 ,food: 1,},
+    { name: 'meat Pizza', id: 2, price: 'GHC 20',rating:2,food:2  },
+    { name: 'Mushroom Pizza', id: 3, price: 'GHC 15',rating:4,food:3   },
+    { name: 'pepperoni Pizza', id: 4, price: 'GHC10',rating:1,food:4   },
+    { name: 'Cheese Pizza', id: 5, price: 'GHC 12' ,rating:3,food:5  },
+    { name: 'Ham Pizza', id: 6, price: 'GHC 20',rating:5 ,food:6  },
   ]);
   
   return (
@@ -36,7 +36,7 @@ export default function Home({navigation}) {
 
     </ImageBackground> 
 
-    <ImageBackground source ={{uri:"https://www.coreldraw.com/static/cdgs/images/pages/seo/tips/photo/basics/blur-background/blur-background-og.jpg"}} style={{
+    <ImageBackground blurRadius={4} source ={{uri:"https://comps.gograph.com/fast-food-seamless-pattern-hand-drawn-food-background-background-template-for-restaurant-design-menu-pattern_gg83623744.jpg"}} style={{
       backgroundColor: 'white',
       flex: 7,
       alignItems:'center',
@@ -48,12 +48,18 @@ export default function Home({navigation}) {
     <View style={{flex:7}} > 
 
     
-
-  <TouchableOpacity style={{paddingBottom:20,paddingTop:20, alignItems:'center'}}>
+<View style={{flexDirection:'row',
+              justifyContent:'space-between',
+}}> 
+  <TouchableOpacity style={{padding:20}}>
  <AntDesign name="search1" size={24} color="black" />
 
  </TouchableOpacity>
 
+ <TouchableOpacity style={{padding:20}}>
+ <AntDesign name="shoppingcart" size={24} color="black" />
+ </TouchableOpacity>
+</View>
     
 
 

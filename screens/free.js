@@ -132,7 +132,21 @@ export default function Login({navigation}) {
       justifyContent:'space-between',
       alignItems:'center',
       flexDirection: "row"
+\\\
 
+
+
+backgroundColor: 'white',
+    //   alignItems: "center",
+    //    borderTopStartRadius:80,
+    //    borderTopEndRadius:80,
+    //    flexDirection: "row",
+    //    paddingHorizontal:150,
+    //    paddingVertical:50,
+    //    bottom:-290,
+    //    justifyContent:'space-between',
+    //    alignItems: "center",
+    //    justifyContent: "center",
     }}>
 
 <TouchableOpacity onPress={() => navigation.navigate('Home') }>
@@ -155,4 +169,82 @@ export default function Login({navigation}) {
 
 
       </View> 
+</View> */}
+
+<ImageBackground blurRadius={2} source ={{uri:"https://img.freepik.com/free-vector/hand-drawn-doodle-food-background_23-2148043106.jpg?size=338&ext=jpg"}} style={{
+      backgroundColor: 'white',
+      flex: 1,
+      alignItems:'center',
+      flexDirection: "row",
+      width: 400,
+      height:700,
+    }}>
+
+
+
+</ImageBackground>
+
+import { Text, View, TouchableOpacity ,Image,ImageBackground} from 'react-native';
+// import { Ionicons, FontAwesome, AntDesign } from '@expo/vector-icons';
+// import Card from '../routes/card';
+// import { images ,foods} from '../styles/global';
+
+// export default function Review({ navigation ,route}) {
+
+// const {name , price ,rating, food} = route.params;
+
+// return(
+    
+ 
+// <ImageBackground source ={{uri:"https://media.istockphoto.com/photos/round-podium-or-pedestal-with-blue-background-picture-id1226478932?b=1&k=20&m=1226478932&s=170667a&w=0&h=hXsvxQilNanpKx7QC_tIsFUOKPl8fdIDfJ_QSKXesGE="}} style={{
+//       backgroundColor: 'white',
+//       flex: 1,
+//       alignItems:'center',
+//       flexDirection: "row",
+//       width: 400,
+//       height:700,
+      
+//     }}>
+
+// </ImageBackground>
+
+
+
+
+// )}
+
+
+
+<View style={{
+    flex:1,
+      backgroundColor: 'white',
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent:'space-between',
+       borderTopStartRadius:80,
+       borderTopEndRadius:80,
+       bottom:-270,
+       margin: 1,
+       marginTop:80,
+       padding:40
+      }}> 
+
+
+
+
+
+<TouchableOpacity onPress={() => navigation.navigate('Home') }>
+<AntDesign name="home" size={24} color="black" />
+
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => navigation.navigate('Settings') }>
+  <Ionicons name="settings-outline" size={24} color="black" />
+
+  </TouchableOpacity>
+
+  <TouchableOpacity>
+  <Ionicons name="ios-menu-outline" size={24} color="black" />
+
+  </TouchableOpacity>
 </View> */}

@@ -14,7 +14,7 @@ export default function App() {
   const MainNavigator = createStackNavigator();
   return (
     <View style={{flex: 1}}>
-        <NavigationContainer>
+        <NavigationContainer> 
           <MainNavigator.Navigator screenOptions = {{headerShown: false}}
           initialRouteName = "Login">
             <MainNavigator.Screen name = "Home" component={Home} />
