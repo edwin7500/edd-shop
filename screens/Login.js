@@ -18,7 +18,7 @@ console.log('dismissed keyboard');
 
 
 <ScrollView>
-  <ImageBackground blurRadius={10} source= {{uri:"https://images.unsplash.com/photo-1634033244119-9dce33e3aedb?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}}
+  <ImageBackground blurRadius={10} source= {{uri:"https://i.ytimg.com/vi/Dg9TFXWvcWw/maxresdefault.jpg"}}
  style={{flex:1}}> 
     <View style={{ justifyContent: "center", alignItems: "center",marginBottom: 10 }}>
         <Image 
@@ -30,14 +30,14 @@ console.log('dismissed keyboard');
             transform:[{rotate:"45deg"}],
             marginBottom: 30,
         }}
-        source= {{uri:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/081d21e6-5700-47bc-b7eb-499169d2a424/dbrsi7l-7dcb9ce5-3b0f-4564-b298-46084570f09c.png/v1/fill/w_536,h_437,q_80,strp/pizza_offer_animated_banner_by_deusgeneral_dbrsi7l-fullview.jpg"
+        source= {{uri:"https://library.kissclipart.com/20181209/wke/kissclipart-happy-pizza-png-clipart-pizza-steve-happys-pizza-b8c7f4a682ae6fb9.jpg"
           }}
          />
          
        <Text style={{color: "rgba(0,0,0,0.6)", 
        fontSize: 24 ,
         fontWeight: '900',
-        color:'black',
+        color:'white',
          fontSize: 30,
          paddingBottom:50,
          fontStyle:"italic",
@@ -50,7 +50,7 @@ console.log('dismissed keyboard');
          
    <View style={{flex: 2,
     justifyContent: "center",
-    backgroundColor: 'white',
+    backgroundColor: '#0C090A',
     alignItems: "center",
      borderTopStartRadius:80,
      borderTopEndRadius:80 ,
@@ -66,7 +66,8 @@ console.log('dismissed keyboard');
       
 
 
-   <Text style={{ marginTop: 15}}>EMAIL OR USERNAME</Text>
+   <Text style={{ marginTop: 15,color:'white',fontWeight: '900'
+ }}>EMAIL OR USERNAME</Text>
 
    <TextInput style={{
     backgroundColor:"#e3e3e3" ,
@@ -75,10 +76,11 @@ console.log('dismissed keyboard');
     borderStyle: 'dashed',
     margin:10,
     width:200,
-    }} placeholder="new" /> 
+    }} placeholder="eg.*****@gmail.com" /> 
 
 
-   <Text>PASSWORD</Text>
+   <Text style={{color:'white',fontWeight: '900',
+}}>PASSWORD</Text>
    
    <TextInput secureTextEntry= {true} style={{
     backgroundColor:"#e3e3e3" ,
@@ -87,18 +89,20 @@ console.log('dismissed keyboard');
     margin:10,
     borderStyle: 'dashed',
     width:200,
-    }} placeholder="new" /> 
+    }} placeholder="*******************" /> 
 
-     <TouchableOpacity onPress={() => {
+     <TouchableOpacity style={{borderRadius:60}} onPress={() => {
        navigation.navigate("Home")
       }}>
       <Text style={{backgroundColor: "#3EB489", 
      padding: 10,
      paddingHorizontal: 60 ,
+     fontWeight: '900',
      flexDirection: 'row',
      alignItems: 'center',
      borderRadius: 10 ,
-     marginTop: 20,}}>SUBMIT</Text>
+     marginTop: 20,
+     }}>SUBMIT</Text>
       </TouchableOpacity>
 
     <TouchableOpacity  
@@ -110,7 +114,7 @@ console.log('dismissed keyboard');
      borderRadius: 10 ,
      marginTop: 20,}}>
          <AntDesign name="google" size={24} color="rgb(256,100,10)" />
-    <Text style={{fontSize: 20 , marginLeft: 10 }}>Login With Gmail</Text>
+    <Text style={{fontSize: 20 ,fontWeight: '900',marginLeft: 10 }}>Login With Gmail</Text>
   
     
 
@@ -118,14 +122,14 @@ console.log('dismissed keyboard');
 
    <TouchableOpacity 
    
-   style={{backgroundColor: "black", 
+   style={{backgroundColor: "#e3e3e3", 
      padding: 10,
-     borderRadius: 10,
+     borderRadius: 60,
      flexDirection: 'row',
      paddingHorizontal: 60 ,
      marginTop: 20,}}>
-         <AntDesign name="apple1" size={24} color="white"/>
-    <Text style={{fontSize: 17, color: "white", marginLeft:10}}>Login With Apple</Text>
+         <AntDesign name="apple1" size={24} color="black"/>
+    <Text style={{fontSize: 17, color: "black",fontWeight: '900',marginLeft:10}}>Login With Apple</Text>
    </TouchableOpacity>
 
    <TouchableOpacity>

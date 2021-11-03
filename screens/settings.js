@@ -21,12 +21,12 @@ return(
     }}>
       <View style={{flex: 2,
     justifyContent: "center",
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     alignItems: "center",
      borderTopStartRadius:80,
      borderTopEndRadius:80,
     //  backgroundColor: '  #D1D0CE ',
-     paddingBottom: 80,
+     paddingBottom: 50,
      bottom:-300,
      padding: 40,
       justifyContent:'space-between',
@@ -36,17 +36,17 @@ return(
     }}>
 
 <TouchableOpacity onPress={() => navigation.navigate('Home')}>
-<AntDesign name="home" size={24} color="black" />
+<AntDesign name="home" size={24} color="white" />
 
   </TouchableOpacity>
 
   <TouchableOpacity onPress={() => navigation.navigate('Settings')}>
-  <Ionicons name="settings-outline" size={24} color="black" />
+  <Ionicons name="settings-outline" size={24} color="white" />
 
   </TouchableOpacity>
 
   <TouchableOpacity>
-  <MaterialCommunityIcons name="account" size={24} color="black" />
+  <MaterialCommunityIcons name="account" size={24} color="white" />
   </TouchableOpacity>
 
 

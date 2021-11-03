@@ -77,7 +77,7 @@ export default function Home({navigation}) {
 </Text>
 
 
-       <View style={{paddingLeft:1}}>
+       <View style={{paddingLeft:10}}>
   
 
     <FlatList numColumns ={2}
@@ -92,7 +92,7 @@ export default function Home({navigation}) {
                       // backgroundColor: 'pink',
                       // fontSize: 24,
                       // borderWidth:1,
-                       width:160,
+                       width:150,
                       }}>
                     { item.name}
                     
@@ -110,7 +110,7 @@ export default function Home({navigation}) {
 
    <View style={{flex: 2,
     justifyContent: "center",
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     alignItems: "center",
      borderTopStartRadius:80,
      borderTopEndRadius:80,
@@ -125,18 +125,18 @@ export default function Home({navigation}) {
     }}>
 
 <TouchableOpacity>
-<AntDesign name="home" size={24} color="black" />
+<AntDesign name="home" size={24} color="white" />
 
   </TouchableOpacity>
 
   <TouchableOpacity onPress={() => navigation.navigate('Settings')}>
-  <Ionicons name="settings-outline" size={24} color="black" />
+  <Ionicons name="settings-outline" size={24} color="white" />
 
   </TouchableOpacity>
 
   <TouchableOpacity>
   {/* <Ionicons name="ios-menu-outline" size={24} color="black" /> */}
-  <AntDesign name="shoppingcart" size={24} color="black" />
+  <AntDesign name="shoppingcart" size={24} color="white" />
 
 
   </TouchableOpacity>
