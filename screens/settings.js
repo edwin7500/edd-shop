@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, View ,ImageBackground, TouchableOpacity} from 'react-native';
 import { Ionicons, FontAwesome, AntDesign } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 
 export default function Settings({navigation}) {
@@ -25,7 +26,7 @@ return(
      borderTopStartRadius:80,
      borderTopEndRadius:80,
     //  backgroundColor: '  #D1D0CE ',
-     paddingBottom: 50,
+     paddingBottom: 80,
      bottom:-300,
      padding: 40,
       justifyContent:'space-between',
@@ -45,8 +46,7 @@ return(
   </TouchableOpacity>
 
   <TouchableOpacity>
-  <Ionicons name="ios-menu-outline" size={24} color="black" />
-
+  <MaterialCommunityIcons name="account" size={24} color="black" />
   </TouchableOpacity>
 
 

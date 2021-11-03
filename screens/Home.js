@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React ,{useState} from 'react';
-import { Text, View ,Image, ImageBackground, StyleSheet,ScrollView,FlatList, TouchableOpacity, Button} from 'react-native';
+import { Text, View ,Image, ImageBackground, StyleSheet,ScrollView,FlatList, TouchableOpacity, Button,TextInput} from 'react-native';
 import { Ionicons, FontAwesome, AntDesign } from '@expo/vector-icons';
 import Card from '../routes/card';
 import { images ,foods} from '../styles/global';
@@ -51,20 +51,33 @@ export default function Home({navigation}) {
 <View style={{flexDirection:'row',
               justifyContent:'space-between',
 }}> 
-  <TouchableOpacity style={{padding:20}}>
- <AntDesign name="search1" size={24} color="black" />
 
+
+  <TouchableOpacity style={{padding:20,flexDirection:'row'}}>
+    
+ <AntDesign name="search1" size={24} color="white" style={{paddingHorizontal:20,paddingTop:10}}/>
+<TextInput style={{
+  backgroundColor:"#e3e3e3" ,
+  padding: 10,
+  borderWidth: 2,
+  width:200,
+  borderRadius:20
+  }}/>  
  </TouchableOpacity>
 
- <TouchableOpacity style={{padding:20}}>
- <AntDesign name="shoppingcart" size={24} color="black" />
- </TouchableOpacity>
+ 
+
 </View>
     
+<Text style={{color:'white',fontSize:24,fontWeight:'900',textAlign:'center'}}>
+  WELCOME TO 
+</Text>
+<Text style={{color:'white',fontSize:24,fontWeight:'900',textAlign:'center',paddingBottom:30}}>
+   PIZZA IN 
+</Text>
 
 
-
-       <View style={{paddingLeft:10}}>
+       <View style={{paddingLeft:1}}>
   
 
     <FlatList numColumns ={2}
@@ -102,9 +115,9 @@ export default function Home({navigation}) {
      borderTopStartRadius:80,
      borderTopEndRadius:80,
     //  backgroundColor: '  #D1D0CE ',
-     paddingBottom: 250,
-     bottom:-240,
-     padding: 40,
+     paddingBottom: 120,
+     bottom:-120,
+     padding: 30,
       justifyContent:'space-between',
       alignItems:'center',
       flexDirection: "row"
@@ -122,7 +135,9 @@ export default function Home({navigation}) {
   </TouchableOpacity>
 
   <TouchableOpacity>
-  <Ionicons name="ios-menu-outline" size={24} color="black" />
+  {/* <Ionicons name="ios-menu-outline" size={24} color="black" /> */}
+  <AntDesign name="shoppingcart" size={24} color="black" />
+
 
   </TouchableOpacity>
 

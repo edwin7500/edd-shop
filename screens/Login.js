@@ -18,7 +18,9 @@ console.log('dismissed keyboard');
 
 
 <ScrollView>
-    <View style={{flex: 2, justifyContent: "center", alignItems: "center", backgroundColor: '#54C571',marginBottom: 10 }}>
+  <ImageBackground blurRadius={10} source= {{uri:"https://images.unsplash.com/photo-1634033244119-9dce33e3aedb?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}}
+ style={{flex:1}}> 
+    <View style={{ justifyContent: "center", alignItems: "center",marginBottom: 10 }}>
         <Image 
         style={{
             width: 110,
@@ -28,13 +30,14 @@ console.log('dismissed keyboard');
             transform:[{rotate:"45deg"}],
             marginBottom: 30,
         }}
-        source= {{uri:"https://images.unsplash.com/photo-1634033244119-9dce33e3aedb?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        source= {{uri:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/081d21e6-5700-47bc-b7eb-499169d2a424/dbrsi7l-7dcb9ce5-3b0f-4564-b298-46084570f09c.png/v1/fill/w_536,h_437,q_80,strp/pizza_offer_animated_banner_by_deusgeneral_dbrsi7l-fullview.jpg"
           }}
          />
          
        <Text style={{color: "rgba(0,0,0,0.6)", 
        fontSize: 24 ,
-        fontWeight: '600',
+        fontWeight: '900',
+        color:'black',
          fontSize: 30,
          paddingBottom:50,
          fontStyle:"italic",
@@ -43,7 +46,7 @@ console.log('dismissed keyboard');
         
 
          </View>
-         
+         </ImageBackground>
          
    <View style={{flex: 2,
     justifyContent: "center",
