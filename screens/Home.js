@@ -11,71 +11,63 @@ export default function Home({navigation}) {
   
   
 
-  const [people, setPeople] = useState([
-    { name: 'chicken Pizza', id: 1, price: 'GHC 70',rating:5 ,food: 1,},
-    { name: 'meat Pizza', id: 2, price: 'GHC 20',rating:2,food:2  },
-    { name: 'Mushroom Pizza', id: 3, price: 'GHC 15',rating:4,food:3   },
-    { name: 'pepperoni Pizza', id: 4, price: 'GHC10',rating:1,food:4   },
-    { name: 'Cheese Pizza', id: 5, price: 'GHC 12' ,rating:3,food:5  },
-    { name: 'Ham Pizza', id: 6, price: 'GHC 20',rating:5 ,food:6  },
-  ]);
+  const people = [
+    { name: 'chicken Pizza', id: 1, price: 'GHC 70',rating:5 ,food: 1,img: {uri:'https://i.ndtvimg.com/i/2015-02/meat-pizza_625x350_41424681507.jpg'}},
+    { name: 'meat Pizza', id: 2, price: 'GHC 20',rating:4,food:2,     img: {uri:'https://www.queensleeappetit.com/wp-content/uploads/2019/02/Meat-Lovers-Pizza-5-1-480x360.jpg'}  },
+    { name: 'Mushroom Pizza', id: 3, price: 'GHC 15',rating:2,food:3 ,img: {uri:'https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/12/20/0/FNK_Gluten-Free-Mushroom-Ricotta_Pizza_s4x3.jpg.rend.hgtvcom.616.462.suffix/1483737096931.jpeg'}  },
+    { name: 'pepperoni Pizza', id: 4, price: 'GHC10',rating:4,food:4 ,img: {uri:'https://i.ndtvimg.com/i/2018-02/pepperoni_620x350_61517464056.jpg'}  },
+    { name: 'Cheese Pizza', id: 5, price: 'GHC 12' ,rating:3,food:5 ,img: {uri:'https://static.toiimg.com/thumb/53110049.cms?width=1200&height=900'} },
+    { name: 'Ham Pizza', id: 6, price: 'GHC 20',rating:5 ,food:6 ,img: {uri:'https://s3.envato.com/files/261152674/DR_150124_8600.jpg'} },
+  ];
   
   return (
-    <><ImageBackground source ={{}} style={{
+    <><ImageBackground blurRadius={4} source ={{uri:"https://ak6.picdn.net/shutterstock/videos/1019308096/thumb/1.jpg?ip=x480"}} style={{
       backgroundColor: 'white',
-      justifyContent:'space-between',
+      flex: 1,
       alignItems:'center',
-      flexDirection: "row"
-      
-      
-    }}>
-      
-
-
- 
-
-    </ImageBackground> 
-
-    <ImageBackground blurRadius={4} source ={{uri:"https://comps.gograph.com/fast-food-seamless-pattern-hand-drawn-food-background-background-template-for-restaurant-design-menu-pattern_gg83623744.jpg"}} style={{
-      backgroundColor: 'white',
-      flex: 7,
-      alignItems:'center',
-      flexDirection: "row"
-      
-      
     }}>
 
-    <View style={{flex:7}} > 
+    <View style={{flex:1}} > 
 
     
-<View style={{flexDirection:'row',
-              justifyContent:'space-between',
-}}> 
+<View style={{
+            flexDirection:'row',
+            alignContent:'space-between'
+            }}> 
 
+<TouchableOpacity style={{padding:30}} onPress={() => navigation.navigate('Settings')}>
+  <Ionicons name="settings-outline" size={24} color="white" />
+
+  </TouchableOpacity>
 
   <TouchableOpacity style={{padding:20,flexDirection:'row'}}>
     
- <AntDesign name="search1" size={24} color="white" style={{paddingHorizontal:20,paddingTop:10}}/>
-<TextInput style={{
+<TextInput placeholder='search' style={{
   backgroundColor:"#e3e3e3" ,
   padding: 10,
   borderWidth: 2,
   width:200,
-  borderRadius:20
+  borderRadius:20,
+  
   }}/>  
  </TouchableOpacity>
 
- 
+ <TouchableOpacity style={{padding:30,paddingHorizontal:10}}>
+ <AntDesign name="shoppingcart" size={24} color="white" />
+
+ </TouchableOpacity>
 
 </View>
-    
+
+
+   <View style={{}}> 
 <Text style={{color:'white',fontSize:24,fontWeight:'900',textAlign:'center'}}>
   WELCOME TO 
 </Text>
 <Text style={{color:'white',fontSize:24,fontWeight:'900',textAlign:'center',paddingBottom:30}}>
    PIZZA IN 
 </Text>
-
+</View>
 
        <View style={{paddingLeft:10}}>
   
@@ -88,7 +80,7 @@ export default function Home({navigation}) {
               <Text style={{ flex: 1,    
                       // marginHorizontal: 10,
                       // marginTop: 24,
-                       padding: 30,
+                       padding: 10,
                       // backgroundColor: 'pink',
                       // fontSize: 24,
                       // borderWidth:1,
@@ -97,57 +89,15 @@ export default function Home({navigation}) {
                     { item.name}
                     
               </Text> 
+              <View style={{paddingBottom:15}}> 
+              <Image source={item.img} style={{width:140,height:50}}/>
+              </View>
 
               </Card>
           </TouchableOpacity>
           )}
      /> 
    </View>
-
-   <View style={{alignItems:"center",justifyContent:'center'}}>
-
-   </View>
-
-   <View style={{flex: 2,
-    justifyContent: "center",
-    backgroundColor: 'black',
-    alignItems: "center",
-     borderTopStartRadius:80,
-     borderTopEndRadius:80,
-    //  backgroundColor: '  #D1D0CE ',
-     paddingBottom: 120,
-     bottom:-120,
-     padding: 30,
-      justifyContent:'space-between',
-      alignItems:'center',
-      flexDirection: "row"
-
-    }}>
-
-<TouchableOpacity>
-<AntDesign name="home" size={24} color="white" />
-
-  </TouchableOpacity>
-
-  <TouchableOpacity onPress={() => navigation.navigate('Settings')}>
-  <Ionicons name="settings-outline" size={24} color="white" />
-
-  </TouchableOpacity>
-
-  <TouchableOpacity>
-  {/* <Ionicons name="ios-menu-outline" size={24} color="black" /> */}
-  <AntDesign name="shoppingcart" size={24} color="white" />
-
-
-  </TouchableOpacity>
-
-
-     
-
-
-      </View> 
-
-
  </View> 
 
  </ImageBackground>

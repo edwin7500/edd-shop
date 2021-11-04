@@ -6,12 +6,14 @@ import { images ,foods} from '../styles/global';
 
 export default function Review({ navigation ,route}) {
 
-const {name , price ,rating, food} = route.params;
 
 return(   
 
     
-<View></View>
+<View>
+
+
+</View>
 
 
 

@@ -230,6 +230,8 @@ import { Text, View, TouchableOpacity ,Image,ImageBackground} from 'react-native
       }}> 
 
 
+{ name: 'chicken Pizza', id: 1, price: 'GHC 70',rating:5 ,food: 1,img: {uri:''}},
+<Image source={item.img}/>
 
 
 
