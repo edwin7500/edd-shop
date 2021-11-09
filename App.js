@@ -6,6 +6,7 @@ import Login from './screens/Login';
 import Home from './screens/Home';
 import Review from './screens/Review';
 import Settings from './screens/settings';
+import Cart from './screens/Cart';
 
 
 
@@ -21,6 +22,8 @@ export default function App() {
             <MainNavigator.Screen name = "Login" component={Login} />
             <MainNavigator.Screen name = "Review" component={Review} />
             <MainNavigator.Screen name = "Settings" component={Settings} />
+            <MainNavigator.Screen name = "Cart" component={Cart} />
+
 
             </MainNavigator.Navigator>
         </NavigationContainer>

@@ -18,6 +18,9 @@ export default function Home({navigation}) {
     { name: 'pepperoni Pizza', id: 4, price: 'GHC10',rating:4,food:4 ,img: {uri:'https://i.ndtvimg.com/i/2018-02/pepperoni_620x350_61517464056.jpg'}  },
     { name: 'Cheese Pizza', id: 5, price: 'GHC 12' ,rating:3,food:5 ,img: {uri:'https://static.toiimg.com/thumb/53110049.cms?width=1200&height=900'} },
     { name: 'Ham Pizza', id: 6, price: 'GHC 20',rating:5 ,food:6 ,img: {uri:'https://s3.envato.com/files/261152674/DR_150124_8600.jpg'} },
+    { name: 'Beef Pizza', id: 7, price: 'GHC 70',rating:4 ,food:7 ,img: {uri:'https://coneti.org/storage/2020/09/beef-pizza.jpg'} },
+    { name: 'Vege Pizza', id: 8, price: 'GHC 90',rating:3 ,food:8 ,img: {uri:'https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/store/header/4491fa4b-af74-4aa3-a0cd-21afca99b93e.jpg'} },
+
   ];
   
   return (
@@ -52,7 +55,7 @@ export default function Home({navigation}) {
   }}/>  
  </TouchableOpacity>
 
- <TouchableOpacity style={{padding:30,paddingHorizontal:10}}>
+ <TouchableOpacity style={{padding:30,paddingHorizontal:10}} onPress={() => navigation.navigate('Cart')}>
  <AntDesign name="shoppingcart" size={24} color="white" />
 
  </TouchableOpacity>

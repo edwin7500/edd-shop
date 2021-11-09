@@ -70,26 +70,29 @@ console.log('dismissed keyboard');
  }}>EMAIL OR USERNAME</Text>
 
    <TextInput style={{
-    backgroundColor:"#e3e3e3" ,
+    // backgroundColor:"#e3e3e3" ,
     padding: 16,
-    borderWidth: 1,
-    borderStyle: 'dashed',
+    borderBottomWidth:2,
+    borderColor:'white',
+    color:'white',
     margin:10,
     width:200,
-    }} placeholder="eg.*****@gmail.com" /> 
+    }} placeholder="eg.*****@gmail.com"  placeholderTextColor='white'/> 
 
 
    <Text style={{color:'white',fontWeight: '900',
 }}>PASSWORD</Text>
    
    <TextInput secureTextEntry= {true} style={{
-    backgroundColor:"#e3e3e3" ,
+    // backgroundColor:"#e3e3e3" ,
     padding: 16,
-    borderWidth: 1,
+   borderBottomWidth:2,
+   borderColor:'white',
+   color:'white',
     margin:10,
-    borderStyle: 'dashed',
+    color:'white',
     width:200,
-    }} placeholder="*******************" /> 
+    }} placeholder="*******************" placeholderTextColor='white' /> 
 
      <TouchableOpacity style={{borderRadius:60}} onPress={() => {
        navigation.navigate("Home")
@@ -102,7 +105,7 @@ console.log('dismissed keyboard');
      alignItems: 'center',
      borderRadius: 10 ,
      marginTop: 20,
-     }}>SUBMIT</Text>
+     }}>LOG IN</Text>
       </TouchableOpacity>
 
     <TouchableOpacity  

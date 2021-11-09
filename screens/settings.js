@@ -10,29 +10,60 @@ export default function Settings({navigation}) {
 return(
   
 
-<ImageBackground source ={{uri:"https://media.istockphoto.com/photos/round-podium-or-pedestal-with-blue-background-picture-id1226478932?b=1&k=20&m=1226478932&s=170667a&w=0&h=hXsvxQilNanpKx7QC_tIsFUOKPl8fdIDfJ_QSKXesGE="}} style={{
+<ImageBackground source ={{uri:"https://qph.fs.quoracdn.net/main-qimg-d3c5e4b2cec54046167d4259006eca11"}} style={{
       backgroundColor: 'white',
       flex: 1,
       width: 400,
       height:700,
-      
+      justifyContent: "center",
+
     }}>
 
-      <View style={{flex:2}}>
+      <View style={{flex:2,
+        padding:2,
+        
+        }}>
 
-      <TouchableOpacity>
-      <Text>language</Text>
+
+      <View style={{alignItems: "center",
+      alignItems:'baseline'
+}}> 
+      <TouchableOpacity  
+     style={{backgroundColor: "#e3e3e3", 
+     padding: 10,
+     paddingHorizontal: 50 ,
+     flexDirection: 'row',
+     borderRadius: 40 ,
+     marginTop: 20,
+     }}>
+    <Text style={{fontSize: 20 ,fontWeight: '900',marginLeft: 10 }}>Languages</Text>
+
+   </TouchableOpacity>
+
+
+
+
+     </View>
+
+
+
+      {/* <TouchableOpacity style={{padding:20, borderWidth:2}}>
+      <Text style={{fontSize:25,fontWeight:'500'}}>language</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity>
-      <Text>language</Text>
+      
+      <TouchableOpacity style={{padding:20, borderWidth:2}}>
+      <Text style={{fontSize:25,fontWeight:'500'}}>language</Text>
+      </TouchableOpacity>
 
-        </TouchableOpacity>
+      
+      <TouchableOpacity style={{padding:20, borderWidth:2}}>
+      <Text style={{fontSize:25,fontWeight:'500'}}>ASK A QUESTION</Text>
+      </TouchableOpacity> */}
 
-        <TouchableOpacity>
-        <Text>language</Text>
 
-        </TouchableOpacity>
+
+     
         
       </View>
 
@@ -43,43 +74,7 @@ return(
 
 
 
-      <View style={{flex: 1,
-    justifyContent: "center",
-    backgroundColor: 'black',
-    alignItems: "center",
-     borderTopStartRadius:80,
-     borderTopEndRadius:80,
-    //  backgroundColor: '  #D1D0CE ',
-     paddingBottom: 120,
-     bottom:-190,
-     padding: 10,
-     paddingHorizontal:100,
-      justifyContent:'space-between',
-      alignItems:'center',
-      flexDirection: "row"
-
-    }}>
-
-<TouchableOpacity onPress={() => navigation.navigate('Home')}>
-<AntDesign name="home" size={24} color="white" />
-
-  </TouchableOpacity>
-
-  <TouchableOpacity onPress={() => navigation.navigate('Settings')}>
-  <Ionicons name="settings-outline" size={24} color="white" />
-
-  </TouchableOpacity>
-
-  <TouchableOpacity>
-  <MaterialCommunityIcons name="account" size={24} color="white" />
-  </TouchableOpacity>
-
-
      
-
-
-      </View> 
-
       </ImageBackground>
 
       
