@@ -108,7 +108,11 @@ return(
         
     </View>
 
-    <TouchableOpacity style={{backgroundColor:'black',
+    <TouchableOpacity
+    onPress={() => {
+        alert('Thank You ');
+      }}
+    style={{backgroundColor:'black',
     borderRadius:30,
     borderWidth:20
 
