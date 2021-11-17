@@ -1,11 +1,13 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Text, View ,ImageBackground, TouchableOpacity} from 'react-native';
 import { Ionicons, FontAwesome, AntDesign } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { Switch } from 'react-native-gesture-handler';
 
 
 export default function Settings({navigation}) {
 
+const [isSwitchEnable, setSwitch ] = React.useState(false)
 
 return(
   
@@ -30,19 +32,41 @@ return(
 }}> 
       <TouchableOpacity  
      style={{backgroundColor: "#e3e3e3", 
-     padding: 10,
-     paddingHorizontal: 50 ,
+     padding: 5,
+     paddingHorizontal: 47 ,
      flexDirection: 'row',
      borderRadius: 40 ,
      marginTop: 20,
      }}>
     <Text style={{fontSize: 20 ,fontWeight: '900',marginLeft: 10 }}>Languages</Text>
 
+
    </TouchableOpacity>
 
+<View style={{flexDirection:'row',alignContent:'space-between',alignItems:'flex-end'}}>
+   <View 
+     style={{backgroundColor: "#e3e3e3", 
+     padding: 5,
+     paddingHorizontal: 20 ,
+     flexDirection: 'row',
+     alignContent:'space-between',
+     borderRadius: 40 ,
+     marginTop: 12,
+     }}>
+    <Text style={{fontSize: 20 ,fontWeight: '900',marginLeft: 10 }}>Dark Mode   </Text>
+
+    <Switch 
+    value={isSwitchEnable}
+    onValueChange={(value) => setSwitch(value)} 
+    /> 
+    </View>
+    
+
+    
 
 
-
+</View>
+  
      </View>
 
 
