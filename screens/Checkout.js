@@ -111,6 +111,7 @@ return(
     <TouchableOpacity
     onPress={() => {
         alert('Thank You ');
+        navigation.navigate('Home')
       }}
     style={{backgroundColor:'black',
     borderRadius:30,
