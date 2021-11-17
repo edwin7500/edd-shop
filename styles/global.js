@@ -35,7 +35,7 @@ export const foods = {
     '5': require('../assets/meatt.jpg'),
     '6': require('../assets/cburger.jpg'),
     '7': require('../assets/beef.jpg'),
-    '8': require('../assets/vege.jpg'),
+    '8': require('../assets/vege.jpg'), 
     
   }
 };

@@ -7,6 +7,7 @@ import Cards from '../routes/cards';
 
 export default function Review({ navigation ,route}) {
 
+
 const {name , price ,rating, food} = route.params;
 
 return(   
@@ -34,6 +35,9 @@ return(
     </View>
 
     <TouchableOpacity  
+    onPress={() => {
+      {name}
+    }}
      style={{backgroundColor: "#e3e3e3", 
      padding: 10,
      paddingHorizontal: 50 ,
@@ -52,7 +56,7 @@ return(
     </View> 
 
 
-        
+         
 
 </ImageBackground>
 

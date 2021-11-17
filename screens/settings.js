@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import { Text, View ,ImageBackground, TouchableOpacity} from 'react-native';
+import { Text, View ,ImageBackground, TouchableOpacity,ActivityIndicator} from 'react-native';
 import { Ionicons, FontAwesome, AntDesign } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Switch } from 'react-native-gesture-handler';
@@ -66,6 +66,9 @@ return(
 
 
 </View>
+
+{/* <ActivityIndicator size="large" color="#ff0000" /> */}
+
   
      </View>
 
