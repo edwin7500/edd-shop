@@ -24,7 +24,11 @@ return(
 
 
   
-  <TouchableOpacity style = {{   backgroundColor: "#FF6C00",
+  <TouchableOpacity 
+   onPress={() => {
+    navigation.navigate("Checkout")
+   }}
+  style = {{   backgroundColor: "#FF6C00",
         marginTop: 500,
         padding: 15,
         marginRight: 10,
