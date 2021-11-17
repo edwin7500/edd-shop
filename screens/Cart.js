@@ -1,14 +1,49 @@
-import { Text, View, TouchableOpacity ,Image,ImageBackground,FlatList} from 'react-native';
+import { Text, View, TouchableOpacity ,TextInput,ImageBackground,FlatList} from 'react-native';
 import { Ionicons, FontAwesome, AntDesign } from '@expo/vector-icons';
 import React from 'react'
 
 export default function cart ({navigation}){
 return(
 
-  <View>
-    <Text>
-      pp
-    </Text>
+  <View style= {{flexDirection: "",
+  justifyContent: "center",
+  marginTop: 30,
+  margin: 10}}>
+  <Text style ={{fontSize: 20, textAlign: "center", fontWeight: "bold", justifyContent:"space-between"}}>Carts</Text>
+
+
+  <TextInput style={{
+    borderBottomWidth:2,
+    borderColor:'black',
+    color:'black',
+    width:500,
+    }}/> 
+
+
+<View>  
+
+
+  
+  <TouchableOpacity style = {{   backgroundColor: "#FF6C00",
+        marginTop: 500,
+        padding: 15,
+        marginRight: 10,
+        marginLeft: 10,
+        marginBottom: 20,
+        borderRadius: 10,
+        paddingHorizontal:50
+        
+  }}>
+      <Text style ={{textAlign: "center", color: "#fff", fontSize: 30, fontWeight: "bold"}}>Buy</Text>
+      </TouchableOpacity>
+
+                </View>
+
+
+
+
+
+
   </View>
 
 );

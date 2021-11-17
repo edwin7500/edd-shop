@@ -37,7 +37,7 @@ return(
      flexDirection: 'row',
      borderRadius: 40 ,
      marginTop: 20,
-     }}>
+        }}>
     <Text style={{fontSize: 20 ,fontWeight: '900',marginLeft: 10 }}>Languages</Text>
 
 
@@ -69,28 +69,48 @@ return(
 
 {/* <ActivityIndicator size="large" color="#ff0000" /> */}
 
-  
+<TouchableOpacity 
+     style={{backgroundColor: "#e3e3e3", 
+     padding: 5,
+     paddingHorizontal: 42 ,
+     flexDirection: 'row',
+     borderRadius: 40 ,
+     marginTop: 20,
+     }}>
+    <Text style={{fontSize: 20 ,fontWeight: '900',marginLeft: 10 }}>Nortification</Text>
+
+
+   </TouchableOpacity>
+
+
+<TouchableOpacity  
+onPress={() => navigation.navigate('Login')}
+     style={{backgroundColor: "#e3e3e3", 
+     padding: 5,
+     paddingHorizontal: 47 ,
+     flexDirection: 'row',
+     borderRadius: 40 ,
+     marginTop: 300,
+     marginLeft:60
+     }}>
+    <Text style={{fontSize: 20 ,fontWeight: '900',marginLeft: 10 }}>LOG OUT</Text>
+
+
+   </TouchableOpacity>
+
+
+
+
+
+
+
+
+
+
+
+
+   
      </View>
-
-
-
-      {/* <TouchableOpacity style={{padding:20, borderWidth:2}}>
-      <Text style={{fontSize:25,fontWeight:'500'}}>language</Text>
-      </TouchableOpacity>
-
-      
-      <TouchableOpacity style={{padding:20, borderWidth:2}}>
-      <Text style={{fontSize:25,fontWeight:'500'}}>language</Text>
-      </TouchableOpacity>
-
-      
-      <TouchableOpacity style={{padding:20, borderWidth:2}}>
-      <Text style={{fontSize:25,fontWeight:'500'}}>ASK A QUESTION</Text>
-      </TouchableOpacity> */}
-
-
-
-     
         
       </View>
 

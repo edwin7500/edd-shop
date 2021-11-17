@@ -35,9 +35,7 @@ return(
     </View>
 
     <TouchableOpacity  
-    onPress={() => {
-      {name}
-    }}
+    onPress={() => navigation.navigate('Cart')}
      style={{backgroundColor: "#e3e3e3", 
      padding: 10,
      paddingHorizontal: 50 ,
